@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3f4c597def.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/jcuello123">GitHub</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#projects-section">Projects</a></li>           
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div id="bg">
+            <div id="index">
+                <p id="name" style="font-size: 48px; padding: 0;">Jeffrey Cuello</p>
+                <p id="title" style="font-size: 20px; padding: 0; font-style: italic;">Software Engineer</p>
+            </div>
+        </div>
+
+        <section id="projects-section">
+            <h1>Projects</h1>
+        </section>
+
+        <div id="projects">
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <a href="http://youtify.online/"><img class="card-img-top" src="images/youtify.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Youtify</h5>
+                      <div class="card-text-wrapper">
+                        <p class="card-text">Convert a YouTube playlist of music into a Spotify playlist.</p>
+                      </div>
+                      <div class="row">
+                        <a href="http://youtify.online/" class="btn btn-primary mr-3">Visit</a>
+                        <a href="https://github.com/jcuello123/youtify" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://game-of-life-visualization.herokuapp.com/"><img class="card-img-top" src="images/gol.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Game of Life</h5>
+                      <div class="card-text-wrapper">
+                        <p class="card-text">Visualization of Conway's Game of Life.</p>
+                      </div>
+                      <div class="row">
+                        <a href="https://game-of-life-visualization.herokuapp.com/" class="btn btn-primary mr-3">Visit</a>
+                        <a href="https://github.com/jcuello123/game-of-life-visualization" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                    <a href="https://snookbook.herokuapp.com/"><img class="card-img-top" src="images/snookbook.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Twitter Clone</h5>
+                      <div class="card-text-wrapper">
+                        <p class="card-text">Social media application. Sign up, log in, post, and like other posts!</p>
+                      </div>
+                      <div class="row">
+                        <a href="https://snookbook.herokuapp.com/" class="btn btn-primary mr-3">Visit</a>
+                        <a href="https://github.com/jcuello123/twitter-clone" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="https://live-player-count.herokuapp.com/"><img class="card-img-top" src="images/live-player-count.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Live Player Count</h5>
+                      <div class="card-text-wrapper">
+                        <p class="card-text">Use a bar chart, pie chart, or line chart to compare the live count of current players in popular games.</p>
+                      </div>
+                      <div class="row">
+                        <a href="https://live-player-count.herokuapp.com/" class="btn btn-primary mr-3">Visit</a>
+                        <a href="https://github.com/jcuello123/player-count" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <section id="resume-section">
+            <h1>Resume</h1>
+        </section>
+
+        <div class="resume">
+          <button id="handlePDFButton" onclick="handlePDF()">Hide resume</button>
+          <embed id="pdf" src="Resume.pdf" type="application/pdf" width="100%" height="1200" scrollbar=0/>
+        </div>
+
+        <section id="contact-section">
+            <h1>Contact</h1>
+        </section>
+
+        <div class="contact">
+            <p><a href="mailto:jcuello123@yahoo.com"><i class="fas fa-envelope mb-4 mr-2"></i>jcuello123@yahoo.com</a></p>
+            <p><a href="https://github.com/jcuello123"><i class="fab fa-github my-4 mr-2"></i>https://github.com/jcuello123</a></p>
+            <p><a href="https://www.linkedin.com/in/jeffrey-c-8a1515140/"><i class="fab fa-linkedin my-4 mr-2"></i>https://www.linkedin.com/in/jeffrey-c-8a1515140/</a></p>
+        </div>
+
+    </div>
+    <script src="handlePDF.js"></script>
+</body>
+</html>
