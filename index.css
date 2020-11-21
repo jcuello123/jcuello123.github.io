@@ -126,16 +126,3 @@ nav ul li {
 .contact a:hover {
   text-decoration: underline;
 }
-
-/* Animations */
-@keyframes hover {
-  0% {
-    top: 150px;
-  }
-  35% {
-    top: 200px;
-  }
-  100% {
-    top: 150px;
-  }
-}
